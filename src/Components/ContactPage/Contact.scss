@@ -1,0 +1,133 @@
+.contact-container{
+
+    // margin: 0 0 2rem 0;
+    margin-top: 2rem;
+
+    .contact-header{
+        text-align: left;
+        color: #5F6769;
+        margin: 0 0 2rem 0;
+    
+        h5{
+            font-weight: bold;
+            color:  #3E474C;
+        }
+    
+        a:first-child{
+            color: #4174C5;
+            margin-right: 2px;
+        }
+        a:last-child{
+            color: #5F6769;
+            opacity: 0.7;
+            margin-left: 2px;
+        }
+    }
+
+    p:last-child{
+        color:  #3E474C;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 2rem;
+    }
+
+    .msg-col{
+        display: block;
+        text-align: left;
+        // flex-wrap: wrap;
+
+        input{
+            padding: 10px 10px;
+            margin: 0 0 20px 0;
+            color: #3E474C;
+            opacity: 0.5;
+            font-size: 15px;
+            background: #F8F8F8;
+            border: 1px solid rgba(62, 71, 76, 0.12);
+            box-sizing: border-box;
+            border-radius: 8px;
+            width: 100%;
+        }
+
+        textarea{
+            padding: 10px 10px;
+            margin: 0 0 15px 0;
+            color: #3E474C;
+            opacity: 0.5;
+            font-size: 15px;
+            background: #F8F8F8;
+            border: 1px solid rgba(62, 71, 76, 0.12);
+            box-sizing: border-box;
+            border-radius: 8px;
+            width: 100%;
+        }
+        a{
+            background: #4174C5;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+            border-radius: 6px;
+            width: min-content;
+            padding: 5px 20px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    
+    }
+
+    .map-col{
+        position: relative;
+      
+
+        img{
+            width: 100%;
+            transition: .2s;
+        }
+
+        img:hover{
+            filter: brightness(50%);
+        }
+
+        .map-address{
+            text-align: left;
+
+            p{
+                color: #3E474C;
+                font-weight: 800;
+                margin-top: 1rem;
+            }
+
+            .address{
+                display: flex;
+
+                p{
+                    margin: 10px 0;
+                    color: #5F6769;
+                    font-weight: normal;
+                    font-size: 15px;
+                }
+             
+
+            }
+
+       
+
+        }
+
+    }
+}
+
+@media(max-width:600px){
+
+    .contact-container{
+
+        .map-col{
+            margin: 30px 0 0 0;
+        }
+
+    }
+
+}

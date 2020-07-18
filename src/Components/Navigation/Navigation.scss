@@ -1,0 +1,204 @@
+$base-color1: #4174c5;
+
+.header1{
+    background-color: #f8f8f8;
+
+    padding: 10px 0;
+
+    .number{
+          display: flex;
+          justify-content: flex-end;  
+          align-items: center;
+    }
+
+    .icon{
+        margin: 0 10px 0 0;
+        font-size: 25px;
+        color: $base-color1;
+    }
+
+    .mail{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    a{
+        text-decoration: none;
+        color: $base-color1;
+    }
+
+    .social-icons{
+        color: $base-color1;
+        border: 1px solid $base-color1;
+        padding: 5px;
+        margin: 5px;
+        // text-align: center;
+    }
+}
+
+
+.header2{
+
+    padding: 20px 0 0 0;
+
+    h3{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+    }
+
+    .name{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .logo{
+         height: 50px;
+         width: 50px;
+         margin: 0 10px 0 0;
+    }
+}
+
+
+
+.header3{
+    background-color:  $base-color1;
+    padding: 10px 0;
+    
+    .navigation{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    .border-right{
+            border-left: 1px solid white;
+            height: 28px;
+            margin: 0 10px;
+    }
+
+    .icon{
+        margin: 0 10px 0 0;
+        font-size: 25px;
+        color: white;
+    }
+    .display{
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .dropdown-switch2{
+        display: none;
+    }
+ 
+    .dropdown-switch2 .dropdown-content{
+        
+        min-width: 350px;
+        // right: 10%;
+        left: -125px;
+        font-weight: 600;
+        
+    }
+
+
+    .dropbtn {
+        background-color: transparent;
+        // color: white;
+        // padding: 16px;
+        font-size: 16px;
+        border: none;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        // width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 20;
+        right: 17px;
+        font-weight: 600;
+     
+      
+       a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      a:hover{
+          background-color: $base-color1;
+          border: 1px solid white;
+          color: white;
+
+    
+                }
+    }
+      
+    
+      
+      .dropdown:hover .dropdown-content {display: block;}
+      
+      .dropdown:hover .dropbtn {background-color: transparent;}
+}
+
+
+
+
+
+@media(max-width: 600px){
+            .header1{
+                .number{
+                    display: none;
+                }
+                .mail{
+                    display: none;
+                }
+            }
+
+            .header2{
+                .name{
+                    h3{
+                        font-size: 12px;
+                    }
+                    .logo{
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+                .mujib-logo{
+                    height: 50px;
+                    width: 80px;
+                }
+                .blank-class{
+                    display: none;
+                }
+                .row{
+                    width: inherit;
+                }
+            }
+
+            .header3{
+                .switch{
+                    display: none;
+                }
+                .dropdown-switch2{
+                    display: flex;
+                }
+                .dropdown-switch1{
+                    display: none;
+                }
+            }
+}
