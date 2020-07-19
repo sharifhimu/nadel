@@ -56,7 +56,7 @@ const Footer = () => {
                     {footerInfo.map((i) => {
                         return(
 
-                            <div className="footer-update-sec">
+                            <div key={i.img} className="footer-update-sec">
 
                             <a href={i.link} target="_blank" rel="noopener noreferrer">
                         

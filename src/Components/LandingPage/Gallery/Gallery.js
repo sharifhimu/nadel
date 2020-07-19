@@ -66,7 +66,7 @@ const NewsViews = () => {
 
                     // <Col>
 
-                    <Card className="full-card" > 
+                    <Card key={i.img} className="full-card" > 
                   <a href={`${base_url}/gallerydetails`} >
                     <Card.Img  src={i.img} />
                     </a>

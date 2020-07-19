@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
 import {Container, Row, Col} from 'react-bootstrap';
 import './Navigation.scss';
@@ -18,6 +18,23 @@ import {FiInstagram} from 'react-icons/fi';
 import { base_url } from "../../config";
 
 const Navigation = () => {
+
+    const [fix, setfix] = useState()
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            let activeclass = '';
+            if( window.scrollY > 177 ){
+                activeclass = 'fixed-top';
+            }
+            setfix({activeclass});
+        })
+
+       
+    }, [] )
+
+    // console.log(fix);
+
     return (
         <div >
             <div className="header1">
@@ -62,7 +79,7 @@ const Navigation = () => {
                 </Row>
                 </Container>
 
-                <div className="header3">    
+                <div className={`header3 ${fix}` }>    
                 
                 <Container >
                 <Row>
@@ -103,9 +120,9 @@ const Navigation = () => {
 
                     {/* <AiOutlineMenu className="icon" /> */}
 
-                    <div class="dropdown">
-                    <button class="dropbtn"> <AiOutlineMenu className="icon" /> </button>
-                    <div class="dropdown-content">
+                    <div className="dropdown">
+                    <button className="dropbtn"> <AiOutlineMenu className="icon" /> </button>
+                    <div className="dropdown-content">
                         <a href={`${base_url}/`}>Link 1</a>
                         <a href={`${base_url}/`}>Link 2</a>
                         <a href={`${base_url}/`}>Link 3</a>
@@ -119,9 +136,9 @@ const Navigation = () => {
 
                     <Col md={3} sm={12} className="navigation display dropdown-switch2">
                     
-                    <div class="dropdown">
-                    <button class="dropbtn"> <AiOutlineMenu className="icon" /> </button>
-                    <div class="dropdown-content">
+                    <div className="dropdown">
+                    <button className="dropbtn"> <AiOutlineMenu className="icon" /> </button>
+                    <div className="dropdown-content">
                         <a href={`${base_url}/`}>HOME</a>
                         <a href={`${base_url}/about`}>ABOUT</a>
                         <a href={`${base_url}/news`}>NEWS & EVENTS</a>

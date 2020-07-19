@@ -66,7 +66,7 @@ const NewsViews = () => {
 
                     // <Col>
 
-                    <Card className="full-card" >
+                    <Card key={i.img} className="full-card" >
                     <Card.Img  src={i.img} />
                     <Card.Body className="news-card-body">
                        <Card.Title style={{ color: '#4174C5' }}> {i.title} </Card.Title> 

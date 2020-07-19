@@ -3,7 +3,7 @@
 export const info = [
 
 
-{
+{   id:1,
     date: '16',
     month: 'OCT',
     mainLocation: 'TSC, Dhaka University',
@@ -11,7 +11,7 @@ export const info = [
     time: '8:00 PM - 10:00 PM',
     fullLocation: 'Fular Road, Dhaka University, Dhaka-1205'
 },
-{
+{   id:2,
     date: '20',
     month: 'OCT',
     mainLocation: 'RAMNA, Dhaka University',

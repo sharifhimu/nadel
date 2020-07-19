@@ -22,7 +22,7 @@ const LatestActivitiesSection = () => {
         id:1,
         title: 'Parliament Session 2019',
         date: '21 September, 2019',
-        text: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
+        text: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum', 
         video: `https://www.youtube.com/embed/4w_NdW-Jv5E`
     });
 
@@ -114,7 +114,7 @@ const LatestActivitiesSection = () => {
                         {info.map((i) => {
                                 return(
 
-                                    <ListGroup.Item>
+                                    <ListGroup.Item key={i.id}>
 
                                     <div style={{ display: 'flex' }}>
                                     
@@ -228,9 +228,9 @@ const LatestActivitiesSection = () => {
                         {smallVideo.map((i) => {
                             return(
 
-                                <Col  className="video-sec">
+                                <Col key={i.id} className="video-sec">
                        
-                                <div className="small-video ">
+                                <div className={i.id === currentImage.id ? "small-video active-video":"small-video"}>
                                         <FaPlayCircle className="video-icon" />
                                     <img className="active-image" alt="small video" src={require(`../../assets/image/videoImage/${i.img}`)}
                                     onClick={() => { showImage(i.img, i.id, i.title, i.date, i.text, i.video); }}
