@@ -31,9 +31,16 @@ $base-color1: #4174c5;
     .social-icons{
         color: $base-color1;
         border: 1px solid $base-color1;
-        padding: 5px;
+        padding: 5px 5px;
         margin: 5px;
-        // text-align: center;
+        display: inline-flex;
+        transition: .2s;
+        // justify-content: center;
+        // align-items: center;
+        // // text-align: center;
+    }
+    .social-icons:hover{
+        transform: scale(1.05);
     }
 }
 
@@ -55,7 +62,7 @@ $base-color1: #4174c5;
     .logo{
          height: 50px;
          width: 50px;
-         margin: 0 10px 0 0;
+         margin: 0 10px 0 5px;
     }
 }
 
@@ -75,7 +82,13 @@ $base-color1: #4174c5;
     a{
         text-decoration: none;
         color: white;
+        transition: .2s;
     }
+
+    a:hover{
+        border-bottom: 1px solid white;
+    }
+
     .border-right{
             border-left: 1px solid white;
             height: 28px;
@@ -83,7 +96,7 @@ $base-color1: #4174c5;
     }
 
     .icon{
-        margin: 0 10px 0 0;
+        // margin: 0 10px 0 0;
         font-size: 25px;
         color: white;
     }
@@ -100,9 +113,24 @@ $base-color1: #4174c5;
     .dropdown-switch2 .dropdown-content{
         
         min-width: 350px;
-        // right: 10%;
-        left: -125px;
+        right: -11.2rem;
+        margin: 10px 0 0 0;
+        // left: -135px;
         font-weight: 600;
+
+        a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+          a:hover{
+              background-color: $base-color1;
+              border: 1px solid white;
+              color: white;
+    
+        
+                    }
         
     }
 
@@ -113,12 +141,16 @@ $base-color1: #4174c5;
         // padding: 16px;
         font-size: 16px;
         border: none;
+        transition: .2s;
       }
+
+    
       
       .dropdown {
         position: relative;
         display: inline-block;
-      }
+        transition: .2s;
+    }
       
       .dropdown-content {
         display: none;
@@ -128,7 +160,7 @@ $base-color1: #4174c5;
         // width: 100%;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 20;
-        right: 17px;
+        right: 0px;
         font-weight: 600;
      
       
@@ -151,7 +183,10 @@ $base-color1: #4174c5;
       
       .dropdown:hover .dropdown-content {display: block;}
       
-      .dropdown:hover .dropbtn {background-color: transparent;}
+      .dropdown:hover .dropbtn {
+    background-color: rgba(255,255,255,0.2);
+    
+    }
 }
 
 

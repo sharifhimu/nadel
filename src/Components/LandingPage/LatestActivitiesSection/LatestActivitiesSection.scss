@@ -10,6 +10,8 @@
         padding: 20px 10px 20px 10px;
         display: block;
         border-radius: .25rem;
+        transition: .2s;
+        cursor: pointer;
     
         a{
             text-decoration: none;
@@ -27,6 +29,13 @@
         }
     
     
+    }
+
+    .icon-style:hover{
+        background-color: #4174c5;
+        a{
+            color: white;
+        }
     }
     
     .subscription-style{
@@ -56,6 +65,7 @@
                 padding: 5px 10px;
                 border: none;
                 margin: 0 5px 0 10px;
+                outline: none;
             }
     
             button{
@@ -66,6 +76,12 @@
                 color: white;
                 padding: 5px 7px;
                 border-radius: .25rem;
+                transition: .2s;
+            }
+            button:hover{
+                background-color: white;
+                border: 1px solid #4174c5;
+                color: #4174c5;
             }
         }
     
@@ -126,13 +142,13 @@
 .video-sec{
     text-align: left;
         overflow: hidden;
+        cursor: pointer;
 
         button{
             border: none;
+            outline: none;
         }
-        button:focus{
-            border: none !important;
-        }
+    
 
       
         p{
@@ -223,7 +239,12 @@
         border-radius: 6px;
         padding: 10px 10px;
         text-decoration: none;
+        transition: .2s;
 
+    }
+    .p4:hover{
+        background: #274472;
+        color: white;
     }
 
 }

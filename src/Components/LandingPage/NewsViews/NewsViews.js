@@ -9,7 +9,7 @@ import Slider from "react-slick";
 
 import './NewsViews.scss';
 
-
+import {base_url} from '../../../config';
 
 
 const NewsViews = () => {
@@ -69,14 +69,14 @@ const NewsViews = () => {
                     <Card className="full-card" >
                     <Card.Img  src={i.img} />
                     <Card.Body className="news-card-body">
-                        <Card.Title style={{ color: '#4174C5' }}> {i.title} </Card.Title>
+                       <Card.Title style={{ color: '#4174C5' }}> {i.title} </Card.Title> 
                         <Card.Text style={{ fontSize: '12px', color: '#5F6769', margin: '0 0 5px 0' }}> {i.date}  </Card.Text>
                       
                       
                         <Card.Text>
                         {i.text}
                         </Card.Text>
-                        <button >Read More</button>
+                        <a href={`${base_url}/newsdetails`}> <button >Read More</button> </a> 
                     </Card.Body>
                     </Card>
 

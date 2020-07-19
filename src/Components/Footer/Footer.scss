@@ -37,6 +37,11 @@
                 align-items: center;
                 padding: 4px;
                 margin: 0 10px 0 0;
+                transition: .2s;
+            }
+
+            .social-icons:hover{
+                transform: scale(1.05);
             }
 
         }

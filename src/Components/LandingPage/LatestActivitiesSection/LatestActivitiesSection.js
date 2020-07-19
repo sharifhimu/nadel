@@ -52,7 +52,7 @@ const LatestActivitiesSection = () => {
                     <Col lg={2}>
 
                     <div className="icon-style">
-                        <a href={`${base_url}/`}>
+                        <a href={`${base_url}/gallerydetails`}>
                     <BsImages className="icon" />
                     <p> GALLERY </p>
                     </a>
@@ -63,7 +63,7 @@ const LatestActivitiesSection = () => {
                     <Col lg={2} >
 
                     <div className="icon-style">
-                        <a href={`${base_url}/`}>
+                        <a href={`${base_url}/eventgallery`}>
                     <MdEventNote className="icon" />
                     <p> EVENT </p>
                     </a>
@@ -72,7 +72,7 @@ const LatestActivitiesSection = () => {
 
                     <Col lg={2} >
                     <div className="icon-style">
-                        <a href={`${base_url}/`}>
+                        <a href={`${base_url}/news`}>
                     <BsNewspaper className="icon" />
                     <p> NEWS </p>
                     </a>
@@ -137,11 +137,7 @@ const LatestActivitiesSection = () => {
                                         </div> 
         
                                     </div>
-        
-                            
-                               
-                           
-        
+       
                                     </div>
         
                                 </ListGroup.Item>
@@ -150,10 +146,9 @@ const LatestActivitiesSection = () => {
                         })}
 
                         
-
                         <ListGroup.Item 
                         style={{ fontSize: '14px',paddingBottom: '5em', paddingTop: '2em'  }}>
-                             <a href={`${base_url}/`} style={{ textDecoration: 'none',color: '#274472'  }} >
+                             <a href={`${base_url}/`} style={{color: '#274472'  }} >
                                   More Events  <IoMdArrowDropright /> 
                                   </a>
                                  </ListGroup.Item>
@@ -170,7 +165,7 @@ const LatestActivitiesSection = () => {
                         <button  onClick={handleShow}>
 
                         <div className="large-video">
-                            <FaPlayCircle className="video-icon" />
+                            <FaPlayCircle className="video-icon" /> 
                         {/* <img className="active-image" src={require(`../../assets/image/videoImage/videoImage 1.png`)} /> */}
                         
                         {currentImage && (
@@ -190,8 +185,7 @@ const LatestActivitiesSection = () => {
                             <Modal.Title> {currentImage.title} </Modal.Title>
                             </Modal.Header>
                             <Modal.Body>
-                                {/* <img src={require(`../../assets/image/videoImage/${currentImage.img}`)} /> */}
-
+                             
                                 <iframe title="video" className="video-style"
                                   src={currentImage.video} 
                                   frameborder="0" 
@@ -202,22 +196,12 @@ const LatestActivitiesSection = () => {
   
                             </Modal.Body>
 
-                            {/* <Modal.Footer>
-                            <Button variant="secondary" onClick={handleClose}>
-                                Close
-                            </Button>
-                            <Button variant="primary" onClick={handleClose}>
-                                Save Changes
-                            </Button>
-                            </Modal.Footer> */}
                         </Modal>
                         </div>
 
                     </Col>
 
-                    <Col lg={3} className="activity-detail-sec1" >
-
-                    
+                    <Col lg={3} className="activity-detail-sec1" > 
 
                  {
                      currentImage && (
@@ -244,7 +228,7 @@ const LatestActivitiesSection = () => {
                         {smallVideo.map((i) => {
                             return(
 
-                                <Col  className=" video-sec">
+                                <Col  className="video-sec">
                        
                                 <div className="small-video ">
                                         <FaPlayCircle className="video-icon" />

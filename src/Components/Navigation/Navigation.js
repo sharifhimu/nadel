@@ -77,10 +77,10 @@ const Navigation = () => {
                     </a>
                     <div className="border-right"></div>
 
-                    <a href={`${base_url}/`}>    
+                    <a href={`${base_url}/about`}>    
                     ABOUT 
                     </a>
-                    <div className="border-right"></div>
+                    <div className="border-right"></div> 
 
                     <a href={`${base_url}/news`}>    
                     NEWS & EVENTS 

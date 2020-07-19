@@ -6,6 +6,7 @@ import {AiOutlineClockCircle} from 'react-icons/ai';
 import './GalleryCard.scss';
 
 import {info} from './GalleryCardInfo';
+import {base_url} from '../../../config';
 
 const GalleryCard = () => {
     return (
@@ -28,7 +29,7 @@ const GalleryCard = () => {
                     <div className="gallery-li">
 
 
-                        <a href="/" alt="gallery">
+                        <a href={`${base_url}/gallerydetails`} alt="gallery">
                         <div className="overgradient"> <p> {i.title} </p> </div>
                          <img className="gallery-img" src={i.img} alt="gallery img" /> 
                          </a>

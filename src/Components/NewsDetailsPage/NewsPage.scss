@@ -61,6 +61,7 @@
                 color: white;
                 padding: 10px 5px;
                 // width: 80%;
+                // text-align: center;
                 // display: flex;
                 // justify-content: center;
                 // margin: 0;
@@ -78,6 +79,7 @@
                     display: grid;
                     width: min-content;
                     // padding: 2px;
+                    transition: .2s;
                       
                     a{
                         text-decoration: none;
@@ -93,6 +95,9 @@
                         line-height: 180%;
                     }
                 }
+                .mostread-single:hover{
+                    transform: scale(1.05);
+                }
             }
 
             .recentnews{
@@ -100,12 +105,20 @@
                 text-align: left;
                 justify-content: center;
 
+                a{
+                    text-decoration: none;
+                }
+
                 .recentnews-single{
                     margin: 5px 0;
                     padding-bottom: 10px;
                     border-bottom: 1px solid #E2EAF2;
                     color: #3E474C;
                     font-weight: 600;
+                    transition: .2s;
+                }
+                .recentnews-single:hover{
+                    border-bottom: 1px solid black;
                 }
             }
         }

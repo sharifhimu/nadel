@@ -58,7 +58,7 @@ const Footer = () => {
 
                             <div className="footer-update-sec">
 
-                            <a href={`${base_url}/`}>
+                            <a href={i.link} target="_blank" rel="noopener noreferrer">
                         
                                 <div style={{ marginRight: '10px' }}>
                                 <img src={i.img} alt="img" />

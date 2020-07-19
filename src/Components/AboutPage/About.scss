@@ -1,0 +1,233 @@
+.about-container{
+
+            margin-top: 2rem;
+
+    .about-header{
+        text-align: left;
+        color: #5F6769;
+        margin: 0 0 2rem 0;
+    
+        h5{
+            font-weight: bold;
+            color:  #3E474C;
+        }
+    
+        a:first-child{
+            color: #4174C5;
+            margin-right: 2px;
+        }
+        a:last-child{
+            color: #5F6769;
+            opacity: 0.7;
+            margin-left: 2px;
+        }
+    }
+
+    .about-col{
+
+        position: relative;
+
+        img{
+            width: 100%;
+        }
+
+        h5{
+            font-weight: bold;
+            text-align: center;    
+        }
+        p{
+            text-align: left;
+            color: #5F6769;
+            line-height: 180%;
+            font-size: 15px;
+        }
+
+        h6{
+            color: #3E474C;
+            font-weight: 800;
+            text-align: left;     
+        }
+
+        .biography{
+            display: flex;
+            align-items: center;
+            // flex-wrap: wrap;
+            .biography-img{
+                    border-radius: .9em;
+                    width: 46%;
+            }
+
+            .p1{
+                margin: 0  0 0  15px;
+            }
+            .p2{
+                margin: 0 15px 0 0  ;
+            }
+            .p2-repeat{
+                display: none;
+            }
+        }
+    }
+
+
+    
+
+        .upcoming-events-card{
+            // width: 25rem;
+            width: 120%;
+            background: #FFFFFF;
+            border: 1px solid rgba(62, 71, 76, 0.12);
+            border-radius: 6px;
+            box-shadow: 0px 4px 13px -5px rgba(0,0,0,0.2);
+            margin: 2rem 0;
+    
+    
+        .list-group-item{
+            border: none;
+            padding: 10px 0 10px 20px;
+            text-align: left;
+        }
+        .date{
+            display: block;
+            justify-content: center;
+            background-color: #E2EAF2;
+            width: 20%;
+            height: 4em;
+            border-radius: .25rem;
+            p{
+                margin: 0;
+                text-align: center;
+            }
+        }
+    
+        .event-name{
+    
+            margin: 0 0 0 10px;
+    
+            .event-location{
+                color: #4174c5;
+                margin-bottom: 5px;
+                font-weight: 600;
+            }
+            .event-date{
+                display: flex;
+                align-items: center;
+               
+                font-size: 12px;
+                color: rgba(0,0,0,.5);
+                margin-bottom: 5px;
+    
+                p{
+                    margin: 0;
+                }
+            }
+        }
+
+        .featured-video{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .play-icon{
+                position: absolute;
+                z-index: 10;
+                color: white;
+                font-size: 50px;
+            }
+
+            .card-img{
+                filter: brightness(50%);
+            }
+        }
+
+        button{
+            border: none;
+        }
+        button:focus{
+            outline: none;
+        }
+
+       
+        
+        
+    
+    
+        }
+
+        .social-icons{
+
+            display: block;
+            text-align: left;
+            padding: 1.5rem 0;
+
+            a{
+                text-decoration: none;
+            }
+           
+            p{
+              margin: 0 0 0 10px;
+              color: #5F6769;      
+            }
+
+            .social-icon{
+                width: min-content !important;
+                margin: 10px 5px 10px 10px;
+                transition: .2s;
+            }
+            .social-icon:hover{
+                transform: scale(1.05);
+            }
+
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 600px){
+            .about-container{
+
+                .biography{
+                    flex-wrap: wrap;
+
+                    .p1{
+                        margin: 0 !important;
+                    }
+                    
+                    .p2{
+                        display: none;
+                    }
+                    .p2-repeat{
+                        display: flex !important;
+                    }
+                }
+
+                .upcoming-events-card{
+                    width: 100%;
+
+                    .event-name{
+                        .event-date{
+                            .location-full{
+                                font-size: 11px;
+                            }
+                        }
+                    }
+                }
+
+                .about-col{
+                    h5{
+                        font-size: 15px;
+                        text-align: left;
+                    }
+                }
+            }   
+}

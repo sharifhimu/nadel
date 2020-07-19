@@ -12,6 +12,7 @@ import NewsViewsPage from "../OnlyPages/NewsViewsPage/NewsViewsPage";
 import GalleryDetailsPage from '../OnlyPages/GalleryDetailsPage/GalleryDetailsPage';
 import NewsDetailsPage from '../OnlyPages/NewsDetailsPage/NewsDetailsPage';
 import ContactPage from '../OnlyPages/ContactPage/ContactPage';
+import AboutPage from '../OnlyPages/AboutPage/AboutPage';
 
 import '../App.scss';
 
@@ -29,6 +30,7 @@ function Routes() {
           <Route path={`${base_url}/gallerydetails`} exact component={GalleryDetailsPage} />
           <Route path={`${base_url}/newsdetails`} exact component={NewsDetailsPage} />
           <Route path={`${base_url}/contact`} exact component={ContactPage} />
+          <Route path={`${base_url}/about`} exact component={AboutPage} />
 
           
          

@@ -46,12 +46,16 @@
     .full-card{
 
             width: 95% !important;
-           
+           cursor: pointer;
             border: none;
-    
+            transition: .2s;    
            .card-img{
             // height: 15em;
            }
+    }
+
+    .full-card:hover{
+            opacity: .5;
     }
 
 }

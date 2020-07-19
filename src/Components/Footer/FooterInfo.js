@@ -8,15 +8,18 @@ export const footerInfo = [
 
 {
     img: img1,
-    title: 'Future Where Technology Creates Good Source'
+    title: 'Future Where Technology Creates Good Source',
+    link: `https://medium.com/@cdixon/eleven-reasons-to-be-excited-about-the-future-of-technology-ef5f9b939cb2`
 },
 {
     img: img2,
-    title: 'Future Where Technology Creates Good Source'
+    title: 'Future Where Technology Creates Good Source',
+    link: `https://medium.com/@cdixon/eleven-reasons-to-be-excited-about-the-future-of-technology-ef5f9b939cb2`
 },
 {
     img: img3,
-    title: 'Future Where Technology Creates Good Source'
+    title: 'Future Where Technology Creates Good Source',
+    link: `https://medium.com/@cdixon/eleven-reasons-to-be-excited-about-the-future-of-technology-ef5f9b939cb2`
 }
 
 

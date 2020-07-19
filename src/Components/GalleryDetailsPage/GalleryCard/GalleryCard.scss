@@ -31,6 +31,8 @@
                 // padding: 5px;
                 position: relative;
                 margin: 5px;
+                overflow: hidden;
+                transition: .2s;
 
                 .overgradient{
                     position: absolute;
@@ -41,6 +43,8 @@
                     display: flex;
                     justify-content: center;
                     align-items: flex-end;
+                    z-index: 10;
+                    // overflow: hidden;
 
                     p{
                         color: white;
@@ -54,6 +58,14 @@
 
                 .gallery-img{
                     width: 100%;
+                    transition: .2s;
+                }
+            }
+
+            .gallery-li:hover{
+
+                .gallery-img{
+                  transform: scale(1.1);
                 }
             }
             

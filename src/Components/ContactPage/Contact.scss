@@ -73,6 +73,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            transition: .2s;
+        }
+        a:hover{
+            background: white;
+            border: 2px solid #4174C5;
+            color: #4174C5;
         }
 
     

@@ -40,14 +40,7 @@ export const newsinfo = [
          
         
     },
-    {
-        img: img1,
-        title: 'Card Title',
-        text: ' Some quick example text to build on the card title and make up the bulk of the card\'s content',
-        date: '21 Sep, 2019, 4:42PM'
-         
-        
-    },
+   
     {
         img: img1,
         title: 'Discussion About BCB',
@@ -80,14 +73,7 @@ export const newsinfo = [
          
         
     },
-    {
-        img: img1,
-        title: 'Card Title',
-        text: ' Some quick example text to build on the card title and make up the bulk of the card\'s content',
-        date: '21 Sep, 2019, 4:42PM'
-         
-        
-    }
+   
 
 
 
