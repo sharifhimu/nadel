@@ -28,7 +28,7 @@ const NewsViewsCard = () => {
                 {newsinfo.map((i) => {
                     return(
 
-                        <Col lg={3}>
+                        <Col key={i.id} lg={3}>
 
                 <Card className="full-card" >
                     <a href={`${base_url}/newsdetails`}>

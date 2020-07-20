@@ -10,6 +10,7 @@ export const newsinfo = [
 
     {
         img: img1,
+        id: 1,
         title: 'Discussion About BCB',
         text: ' Some quick example text to build on the card title and make up the bulk of the card\'s content',
         date: '21 Sep, 2019, 4:42PM'
@@ -18,6 +19,7 @@ export const newsinfo = [
     },
     {
         img: img2,
+        id: 2,
         title: 'Sports Field Observation',
         text: ' Some quick example text to build on the card title and make up the bulk of the card\'s content',
         date: '21 Sep, 2019, 4:42PM'
@@ -26,6 +28,7 @@ export const newsinfo = [
     },
     {
         img: img3,
+        id: 3,
         title: 'Parliament Session 2019',
         text: ' Some quick example text to build on the card title and make up the bulk of the card\'s content',
         date: '21 Sep, 2019, 4:42PM'
@@ -34,6 +37,7 @@ export const newsinfo = [
     },
     {
         img: img4,
+        id: 4,
         title: 'Director of BCB',
         text: ' Some quick example text to build on the card title and make up the bulk of the card\'s content',
         date: '21 Sep, 2019, 4:42PM'
@@ -43,6 +47,7 @@ export const newsinfo = [
    
     {
         img: img1,
+        id: 5,
         title: 'Discussion About BCB',
         text: ' Some quick example text to build on the card title and make up the bulk of the card\'s content',
         date: '21 Sep, 2019, 4:42PM'
@@ -51,6 +56,7 @@ export const newsinfo = [
     },
     {
         img: img2,
+        id: 6,
         title: 'Sports Field Observation',
         text: ' Some quick example text to build on the card title and make up the bulk of the card\'s content',
         date: '21 Sep, 2019, 4:42PM'
@@ -59,6 +65,7 @@ export const newsinfo = [
     },
     {
         img: img3,
+        id: 7,
         title: 'Parliament Session 2019',
         text: ' Some quick example text to build on the card title and make up the bulk of the card\'s content',
         date: '21 Sep, 2019, 4:42PM'
@@ -67,6 +74,7 @@ export const newsinfo = [
     },
     {
         img: img4,
+        id: 8,
         title: 'Director of BCB',
         text: ' Some quick example text to build on the card title and make up the bulk of the card\'s content',
         date: '21 Sep, 2019, 4:42PM'

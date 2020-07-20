@@ -71,6 +71,8 @@ $base-color1: #4174c5;
 .header3{
     background-color:  $base-color1;
     padding: 10px 0;
+
+ 
     
     .navigation{
         display: flex;
@@ -190,6 +192,13 @@ $base-color1: #4174c5;
 }
 
 
+
+.noheight{
+    height: 0;
+}
+.navheight{
+    height: 48px;
+}
 
 
 

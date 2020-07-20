@@ -23,17 +23,17 @@ const Navigation = () => {
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
-            let activeclass = '';
+            let className = '';
             if( window.scrollY > 177 ){
-                activeclass = 'fixed-top';
+                className = 'fixed-top';
             }
-            setfix({activeclass});
+            setfix({className});
         })
 
        
     }, [] )
 
-    // console.log(fix);
+    console.log(fix);
 
     return (
         <div >
@@ -79,8 +79,9 @@ const Navigation = () => {
                 </Row>
                 </Container>
 
-                <div className={`header3 ${fix}` }>    
-                
+
+                <div className= { window.scrollY > 177 ? "header3 fixed-top" : "header3" }>    
+                {/* <div className="header3"> */}
                 <Container >
                 <Row>
                 <Col lg={1} md={0}>
@@ -157,6 +158,9 @@ const Navigation = () => {
                 </Container>
                 </div>
 
+                <Container>
+                <div className= {window.scrollY > 177 ? "navheight" : "noheight" }  ></div>
+                </Container>
         </div>
     );
 };
