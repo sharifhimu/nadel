@@ -10,6 +10,7 @@ import {FiPhone} from 'react-icons/fi';
 import {IoIosMail} from 'react-icons/io';
 import {AiOutlineMenu} from 'react-icons/ai';
 import {GoSearch} from 'react-icons/go';
+// import {GrFormClose} from 'react-icons/gr';
 import {FaFacebookF} from 'react-icons/fa';
 import {AiOutlineTwitter} from 'react-icons/ai';
 import {FaLinkedinIn} from 'react-icons/fa';
@@ -19,6 +20,7 @@ import { base_url } from "../../config";
 
 const Navigation = () => {
 
+    // this is navigation fix on top section which is not work but handy in anther way
     const [fix, setfix] = useState()
 
     useEffect(() => {
@@ -33,7 +35,60 @@ const Navigation = () => {
        
     }, [] )
 
-    console.log(fix);
+    // console.log(fix);
+
+    // this is searchbar expanding area
+
+    useEffect(() => {
+
+            const search_icon = document.getElementById("search_icon");
+            const search_input = document.getElementById("search_input");
+        
+            
+
+            search_icon.addEventListener('click', () =>{
+            if (!search_input.classList.contains('input_open')){
+              search_input.classList.add('input_open');
+            //   search_icon.innerHTML = ' <GrFormClose/> ';
+            }
+           });
+
+           search_icon.addEventListener('click', () => {
+            if(search_input.classList.contains('input_open')){
+          
+                search_input.classList.remove('input-open');
+                // search_icon.innerHTML=' <GrFormClose/> ';
+              }
+           });
+
+    }, [])
+    
+    //   search option in mobile responsive
+    useEffect(() => {
+
+        const search_icon2 = document.getElementById("search_icon2");
+        const search_input2 = document.getElementById("search_input2");
+    
+        
+
+        search_icon2.addEventListener('click', () =>{
+        if (!search_input2.classList.contains('input_open')){
+          search_input2.classList.add('input_open');
+        //   search_icon.innerHTML = ' <GrFormClose/> ';
+        }
+       });
+
+       search_icon2.addEventListener('click', () => {
+        if(search_input2.classList.contains('input_open')){
+      
+            search_input2.classList.remove('input-open');
+            // search_icon.innerHTML=' <GrFormClose/> ';
+          }
+       });
+
+}, [])
+
+
 
     return (
         <div >
@@ -131,9 +186,15 @@ const Navigation = () => {
                     </div>    
 
                     <div className="border-right"></div>
-                    <GoSearch className="icon" />
-                    
+
+                    <div className="search-sec">
+                    <input id="search_input" className="search_input" type="search" />
+                    <button id="search_icon" className="search_icon"> <GoSearch  /> </button>
+                    </div>
+
                     </Col>
+
+
 
                     <Col md={3} sm={12} className="navigation display dropdown-switch2">
                     
@@ -150,7 +211,11 @@ const Navigation = () => {
                     </div>    
 
                     <div className="border-right"></div>
-                    <GoSearch className="icon" />
+                    
+                    <div className="search-sec">
+                    <input id="search_input2" className="search_input" type="search" />
+                    <button id="search_icon2" className="search_icon"> <GoSearch  /> </button>
+                    </div>
 
                     </Col>
                     

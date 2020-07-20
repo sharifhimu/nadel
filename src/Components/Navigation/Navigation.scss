@@ -78,6 +78,45 @@ $base-color1: #4174c5;
         display: flex;
         justify-content: flex-start;
         align-items: center;
+
+        .search-sec{
+             display: flex;   
+            align-items: center;
+            justify-content: left;
+
+            .search_icon{
+                // color: black;
+                background-color: transparent;
+                border: 0;
+                color: white;
+                font-size: 20px;
+                outline: none;
+                z-index: 10;
+                transition: .2s;
+            }
+
+            .search_icon:hover{
+                background-color: rgba(255,255,255,0.2);
+            }
+    
+            .search_input{
+                width: 0%;
+                display: none;
+                border: 0;
+            }
+            .search_input:focus{
+                outline: none;
+                border: none;
+            }
+    
+            .input_open{
+                width: 100%;
+                display: flex;
+            }
+
+        }
+
+        
     
     }
 

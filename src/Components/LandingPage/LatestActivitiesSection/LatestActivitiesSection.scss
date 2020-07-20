@@ -272,8 +272,15 @@
 
     
 .modal-content{
-    width: 150% !important;
+    width: 1200px !important;
     background-color: rgba(0,0,0,.5) !important;
+    display: flex;
+    align-items: center;
+
+
+    .modal-header{
+        align-items: center;
+    }
    
     .modal-title{
         color: white;
@@ -282,8 +289,8 @@
         color: white;
     }
     .video-style{
-        width: 700px;
-        height: 315px;
+        width: 1000px;
+        height: 500px;
     }
 
 }
