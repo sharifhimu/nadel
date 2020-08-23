@@ -21,15 +21,15 @@ import { base_url } from "../../config";
 const Navigation = () => {
 
     // this is navigation fix on top section which is not work but handy in anther way
-    const [fix, setfix] = useState()
+    // const [fix, setfix] = useState()
 
     useEffect(() => {
-        window.addEventListener('scroll', () => {
-            let className = '';
-            if( window.scrollY > 177 ){
-                className = '';
-            }
-            setfix({className});
+        // window.addEventListener('scroll', () => {
+        //     let className = '';
+        //     if( window.scrollY > 177 ){
+        //         className = '';
+        //     }
+            // setfix({className});
         })
 
        
