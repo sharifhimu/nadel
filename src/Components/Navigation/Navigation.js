@@ -27,7 +27,7 @@ const Navigation = () => {
         window.addEventListener('scroll', () => {
             let className = '';
             if( window.scrollY > 177 ){
-                className = 'fixed-top';
+                className = '';
             }
             setfix({className});
         })

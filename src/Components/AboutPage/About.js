@@ -199,7 +199,7 @@ const About = () => {
                                             src={i.video} 
                                             frameborder="0" 
                                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                                            allowfullscreen>
+                                            allowFullScreen>
 
                                             </iframe>
 
