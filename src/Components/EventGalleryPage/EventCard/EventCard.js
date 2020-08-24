@@ -32,7 +32,7 @@ const EventCard = () => {
                             <Col lg={4}>
 
                             <Card className="full-card" >
-                            <a href={`${base_url}/gallerydetails`}>
+                            <Link to={`${base_url}/gallerydetails`}>
                             <Card.Body className="news-card-body">
                                 
                             <Card.Img  src={i.img} />
@@ -44,7 +44,7 @@ const EventCard = () => {
                                       </Card.Text>
                                       
                             </Card.Body>
-                            </a>
+                            </Link>
                             </Card>
         
                            </Col>
