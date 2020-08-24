@@ -1,6 +1,6 @@
 import React from 'react';
 // import {Container} from 'react-bootstrap';
-
+import {Link} from 'react-router-dom';
 import {AiOutlineClockCircle} from 'react-icons/ai';
 
 import './GalleryCard.scss';
@@ -29,10 +29,10 @@ const GalleryCard = () => {
                     <div className="gallery-li">
 
 
-                        <a href={`${base_url}/gallerydetails`} alt="gallery">
+                        <Link to={`${base_url}/gallerydetails`} alt="gallery">
                         <div className="overgradient"> <p> {i.title} </p> </div>
                          <img className="gallery-img" src={i.img} alt="gallery img" /> 
-                         </a>
+                         </Link>
                     </div>
                 
                     )

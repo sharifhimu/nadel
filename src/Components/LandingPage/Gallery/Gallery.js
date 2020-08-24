@@ -1,6 +1,6 @@
 import React from 'react';
 import {Card,  Container,} from 'react-bootstrap';
-
+import {Link} from 'react-router-dom';
 import {Galleryinfo} from './GalleryInfo';
 
 import "slick-carousel/slick/slick.css"; 
@@ -67,9 +67,9 @@ const NewsViews = () => {
                     // <Col>
 
                     <Card key={i.img} className="full-card" > 
-                  <a href={`${base_url}/gallerydetails`} >
+                  <Link to={`${base_url}/gallerydetails`} >
                     <Card.Img  src={i.img} />
-                    </a>
+                    </Link>
                    
                     </Card>
 
