@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Row, Col, Card} from 'react-bootstrap';
 import { base_url } from "../../../config";
-
+import {Link} from 'react-router-dom';
 import {AiOutlineClockCircle} from 'react-icons/ai';
 
 import './EventCard.scss';
