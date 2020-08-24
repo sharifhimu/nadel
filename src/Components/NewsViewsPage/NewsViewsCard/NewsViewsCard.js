@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container,Row, Col, Card } from 'react-bootstrap';
 import { base_url } from "../../../config";
-
+import {Link} from 'react-router-dom';
 
 
 import './NewsViewsCard.scss';
@@ -17,7 +17,7 @@ const NewsViewsCard = () => {
                 <h5> News & Views </h5>
                 
                 <div style={{ display: 'flex' }}>
-                    <a href={`${base_url}/`}> Home </a> <p> / </p> <a href={`${base_url}/news`}> News & Views </a>
+                    <Link to={`${base_url}/`}> Home </Link> <p> / </p> <Link to={`${base_url}/news`}> News & Views </Link>
                 </div>
 
             </div>
@@ -31,7 +31,7 @@ const NewsViewsCard = () => {
                         <Col key={i.id} lg={3}>
 
                 <Card className="full-card" >
-                    <a href={`${base_url}/newsdetails`}>
+                    <Link to={`${base_url}/newsdetails`}>
                     <Card.Img  src={i.img} />
                     <Card.Body className="news-card-body">
                         <Card.Title style={{ color: '#4174C5' }}> {i.title} </Card.Title>
@@ -43,7 +43,7 @@ const NewsViewsCard = () => {
                         </Card.Text>
                         <button >Read More</button>
                     </Card.Body>
-                    </a>
+                    </Link>
                     </Card>
 
                 </Col>

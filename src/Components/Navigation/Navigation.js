@@ -1,6 +1,7 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 
 import {Container, Row, Col} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 import './Navigation.scss';
 
 import logo from '../assets/image/logo.png';
@@ -30,10 +31,10 @@ const Navigation = () => {
         //         className = '';
         //     }
             // setfix({className});
-        })
+        // })
 
        
-    }, [] )
+    }, [])
 
     // console.log(fix);
 
@@ -144,30 +145,30 @@ const Navigation = () => {
                 </Col>
 
                     <Col md={7} sm={12} className="navigation switch">
-
-                    <a href={`${base_url}/`}>    
+ 
+                    <Link to={`${base_url}/`}>    
                     HOME 
-                    </a>
+                    </Link>
                     <div className="border-right"></div>
 
-                    <a href={`${base_url}/about`}>    
+                    <Link to={`${base_url}/about`}>    
                     ABOUT 
-                    </a>
+                    </Link>
                     <div className="border-right"></div> 
 
-                    <a href={`${base_url}/news`}>    
+                    <Link to={`${base_url}/news`}>    
                     NEWS & EVENTS 
-                    </a>
+                    </Link>
                     <div className="border-right"></div>
 
-                    <a href={`${base_url}/eventgallery`}>    
+                    <Link to={`${base_url}/eventgallery`}>    
                     GALLERY
-                    </a>
+                    </Link>
                     <div className="border-right"></div>
                         
-                    <a href={`${base_url}/contact`}>    
+                    <Link to={`${base_url}/contact`}>    
                     CONTACT
-                    </a>
+                    </Link>
                     
                             
                     </Col>
@@ -179,9 +180,9 @@ const Navigation = () => {
                     <div className="dropdown">
                     <button className="dropbtn"> <AiOutlineMenu className="icon" /> </button>
                     <div className="dropdown-content">
-                        <a href={`${base_url}/`}>Link 1</a>
-                        <a href={`${base_url}/`}>Link 2</a>
-                        <a href={`${base_url}/`}>Link 3</a>
+                        <Link to={`${base_url}/`}>Link 1</Link>
+                        <Link to={`${base_url}/`}>Link 2</Link>
+                        <Link to={`${base_url}/`}>Link 3</Link>
                     </div>
                     </div>    
 
@@ -201,12 +202,12 @@ const Navigation = () => {
                     <div className="dropdown">
                     <button className="dropbtn"> <AiOutlineMenu className="icon" /> </button>
                     <div className="dropdown-content">
-                        <a href={`${base_url}/`}>HOME</a>
-                        <a href={`${base_url}/about`}>ABOUT</a>
-                        <a href={`${base_url}/news`}>NEWS & EVENTS</a>
-                        <a href={`${base_url}/eventgallery`}>GALLERY</a>
-                        <a href={`${base_url}/contact`}>CONTACT</a>
-                        <a href={`${base_url}/`}>MORE LINK</a>
+                        <Link to={`${base_url}/`}>HOME</Link>
+                        <Link to={`${base_url}/about`}>ABOUT</Link>
+                        <Link to={`${base_url}/news`}>NEWS & EVENTS</Link>
+                        <Link to={`${base_url}/eventgallery`}>GALLERY</Link>
+                        <Link to={`${base_url}/contact`}>CONTACT</Link>
+                        <Link to={`${base_url}/`}>MORE LINK</Link>
                     </div>
                     </div>    
 
